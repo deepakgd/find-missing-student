@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Institute of Technology</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container register-form">
+        <div class="form">
+            <div class="note">
+                <p>California Institute of Technology - Students for yearly trip</p>
+            </div>
+            
+                <div class="form-content">
+                    <form id="studentForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Student Name" value="" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btnSubmit">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Total Students: <span id="total">0</span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul id="nameList">
+                    </ul>
+                </div>
+            
+        </div>
+
+        <div class="form">
+            <div class="note">
+                <p>Students Standing in Queue</p>
+            </div>
+            
+                <div class="form-content">
+                    <form id="queueForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Student Name" value="" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btnSubmit">Add to Queue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <ul id="queueList">
+                    </ul>
+                </div>
+            
+        </div>
+
+        <div class="form">
+            <div class="note">
+                <p>Find the Missing Students</p>
+            </div>
+            <div class="form-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-block btnSubmit" id="find">Find</button>
+                        <ul id="missingList">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
